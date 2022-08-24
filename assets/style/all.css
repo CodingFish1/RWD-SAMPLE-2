@@ -77,12 +77,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -117,11 +117,17 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: calc(1.2625rem + 0.15vw);
+}
+
+@media (min-width: 1200px) {
+  h5, .h5 {
+    font-size: 1.375rem;
+  }
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 p {
@@ -8453,7 +8459,7 @@ fieldset:disabled .btn {
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-2 {
@@ -8469,11 +8475,27 @@ fieldset:disabled .btn {
 }
 
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: calc(1.2625rem + 0.15vw) !important;
 }
 
 .fs-6 {
+  font-size: 1.25rem !important;
+}
+
+.fs-7 {
+  font-size: 1.125rem !important;
+}
+
+.fs-8 {
   font-size: 1rem !important;
+}
+
+.fs-9 {
+  font-size: 0.875rem !important;
+}
+
+.fs-10 {
+  font-size: 0.75rem !important;
 }
 
 .fst-italic {
@@ -11635,7 +11657,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
   .fs-2 {
     font-size: 2rem !important;
@@ -11645,6 +11667,9 @@ fieldset:disabled .btn {
   }
   .fs-4 {
     font-size: 1.5rem !important;
+  }
+  .fs-5 {
+    font-size: 1.375rem !important;
   }
 }
 
@@ -11685,10 +11710,76 @@ fieldset:disabled .btn {
   }
 }
 
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.main-area {
+  padding: 204px 0px 203px 0px;
+  background-image: url(../../images/bg_home.jpg);
+}
+
+.main-area .slogan-border {
+  padding: 50.8px 0px 50.41px 0px;
+  position: relative;
+}
+
+.main-area .square-1 {
+  position: absolute;
+  top: -2.2%;
+  left: -0.9%;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+.main-area .square-2 {
+  position: absolute;
+  top: -2.2%;
+  left: 99.2%;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+.main-area .square-3 {
+  position: absolute;
+  top: 97.8%;
+  left: -0.9%;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+.main-area .square-4 {
+  position: absolute;
+  top: 97.8%;
+  left: 99.2%;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+.rgb-border {
+  position: relative;
+}
+
+.rgb-border ::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 50%;
+  width: 50%;
+  height: 3px;
+  background: #62DB54;
+}
+
+.rgb-border ::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0%;
+  width: 50%;
+  height: 3px;
+  background: #09ACF5;
 }
 
 /*# sourceMappingURL=all.css.map */
