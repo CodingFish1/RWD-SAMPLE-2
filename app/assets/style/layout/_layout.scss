@@ -1,0 +1,25 @@
+.rgb-border{
+    position: relative;
+
+    ::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top:100%;
+        left:50%;
+        width: 50%;
+        height: 3px;
+        background:#62DB54;
+    }
+
+    ::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top:100%;
+        left:0%;
+        width: 50%;
+        height: 3px;
+        background:#09ACF5;
+          }
+}

@@ -1,5 +1,46 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+  .main-area{
+    padding:204px 0px 203px 0px;
+    background-image: url(../../images/bg_home.jpg);
+
+  .slogan-border{
+      padding: 50.8px 0px 50.41px 0px;
+      position: relative;
+  }
+
+  .square-1{
+    position: absolute;
+    top:-2.2%;
+    left:-0.9%;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+  }
+
+  .square-2{
+    position: absolute;
+    top:-2.2%;
+    left:99.2%;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+  }
+
+  .square-3{
+    position: absolute;
+    top:97.8%;
+    left:-0.9%;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+  }
+
+  .square-4{
+    position: absolute;
+    top:97.8%;
+    left:99.2%;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+  }
+
 }
