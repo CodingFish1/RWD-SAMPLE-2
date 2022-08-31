@@ -1,6 +1,30 @@
+  .gradient-text-custom {
+    background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+    background-clip: text;
+    color: transparent;
+  }
+
+  .gradient-custom {
+    background-image: linear-gradient(104deg, #62DB54, #09ACF5);
+  }
+
+  .hue-locator{
+    position: relative;
+  }
+
+  *, *::before, *::after {
+    box-sizing:border-box;
+   }
+
+   .fs-sp{
+    font-style: 26px;
+   }
+
+  /**************/
   .main-area{
-    padding:204px 0px 203px 0px;
-    background-image: url(../../images/bg_home.jpg);
+    padding:203px 0px 204px 0px;
+    background-image: url(../images/bg_home.jpg);
+    background-size: cover;
 
   .slogan-border{
       padding: 50.8px 0px 50.41px 0px;
@@ -13,7 +37,6 @@
     left:-0.9%;
     width: 10px;
     height: 10px;
-    background-color: red;
   }
 
   .square-2{
@@ -22,7 +45,6 @@
     left:99.2%;
     width: 10px;
     height: 10px;
-    background-color: red;
   }
 
   .square-3{
@@ -31,7 +53,6 @@
     left:-0.9%;
     width: 10px;
     height: 10px;
-    background-color: red;
   }
 
   .square-4{
@@ -40,7 +61,168 @@
     left:99.2%;
     width: 10px;
     height: 10px;
-    background-color: red;
   }
 
 }
+
+/**********spec***********/
+.spec{
+
+  span{
+    font-size: 50px;
+  }
+
+  .card-1 :hover{
+    border: 1px solid #62DB54;
+    border-radius: 12pt 12pt 12pt 12pt;
+    background-color: #202020;
+  }
+
+  .hue-line{
+    position:absolute;
+    top:100%;
+    left:0%;
+    height: 3px;
+    width:20%;
+  }
+
+}
+
+/***************/
+.study-process{
+  .hue-line-2{
+      position:absolute;
+      top:100%;
+      left:35%;
+      height: 3px;
+      width:29.76%;
+    }
+
+  .hue-line-3{
+    line-height: 56px;
+    position: absolute;
+    top:-15%;
+    left:20;
+    background-color:black;
+  }
+  
+  .card-2-layout{
+    padding-top: 74px;
+    padding-bottom: 74px;
+
+    .card-2{
+      border-radius: 12pt 12pt 12pt 12pt;
+    }
+  }
+
+}
+
+/****************/
+.btn-section{
+
+  .hue-line-3{
+    position:absolute;
+    top:100%;
+    left:45%;
+    height: 3px;
+    width:13.73%;
+  }
+
+}
+
+/***Program********/
+.program-card{
+
+  .hue-line-4{
+    position:absolute;
+    top:100%;
+    left:35%;
+    height: 3px;
+    width:29.76%;
+  }
+
+  .card-4{
+
+    border-radius: 24pt 24pt 24pt 24pt;
+
+    img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+}
+
+/*********Benefit*********/
+.benefit{
+
+  .card-padding{
+    padding-top: 216.04px;
+    padding-bottom: 215.96px;
+  }
+
+  .hue-line-5{
+    position:absolute;
+    top:100%;
+    left:0%;
+    height: 3px;
+    width:20%;
+  }
+
+  .context-z-index{
+    z-index: 1;
+  }
+
+  .hue-line-6{
+    z-index: 0;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    opacity: 0.6;
+    background-color: black;
+  }
+
+  .card-body:hover .hue-line-6{
+    opacity: 0;
+  }
+
+  .card-body:hover{
+    width: 30%;
+    transition: width 0.5s;
+  }
+
+  .bgi-1{
+    position: relative;
+    background-image: url(../images/info01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bgi-2{
+    background-image: url(../images/info02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bgi-3{
+    background-image: url(../images/info03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bgi-4{
+    background-image: url(../images/info04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+}
+
+/****Articles***********/
