@@ -13170,7 +13170,8 @@ img {
   background-image: url(../images/bg_share.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-color: #000;
 }
 
 .slides-section .hue-line-8 {
@@ -13183,7 +13184,6 @@ img {
 
 .slides-section .swiper-img img {
   border-radius: 24pt 24pt 24pt 24pt;
-  max-width: 525px;
 }
 
 .slides-section .swiper-img::before {
@@ -13191,24 +13191,24 @@ img {
   content: "";
   border-radius: 24pt 24pt 24pt 24pt;
   border: 1px solid red;
-  width: 95%;
+  width: 100%;
   height: 100%;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
+  left: -15px;
+  top: 15px;
+  z-index: -1;
 }
 
 .slides-section .swiper-card {
   position: absolute;
   background-color: white;
-  top: -120px;
-  left: 45%;
+  top: 220px;
+  left: -5%;
   border-radius: 24pt 24pt 24pt 0pt;
 }
 
 .slides-section .swiper-card img {
   position: absolute;
-  top: -30%;
+  top: -15%;
   left: 60%;
   width: 100px;
   height: 100px;
