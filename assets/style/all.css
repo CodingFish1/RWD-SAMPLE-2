@@ -13190,12 +13190,12 @@ img {
   position: absolute;
   content: "";
   border-radius: 24pt 24pt 24pt 24pt;
-  border: 1px solid yellow;
-  width: 100%;
+  border: 1px solid red;
+  width: 95%;
   height: 100%;
-  left: -15px;
-  top: 15px;
-  z-index: -1;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
 }
 
 .slides-section .swiper-card {
