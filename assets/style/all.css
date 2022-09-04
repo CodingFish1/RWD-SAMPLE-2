@@ -13183,6 +13183,7 @@ img {
 
 .slides-section .swiper-img img {
   border-radius: 24pt 24pt 24pt 24pt;
+  max-width: 525px;
 }
 
 .slides-section .swiper-img::before {
