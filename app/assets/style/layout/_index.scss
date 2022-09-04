@@ -280,7 +280,8 @@
   background-image: url(../images/bg_share.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-color: #000;
 
   .hue-line-8{
     position:absolute;
@@ -294,14 +295,13 @@
       
     img{
       border-radius: 24pt 24pt 24pt 24pt;
-      max-width: 525px;
     }
 
     &::before{
       position: absolute;
       content:"";
       border-radius: 24pt 24pt 24pt 24pt;
-      border: 1px solid yellow;
+      border: 1px solid red;
       width: 100%;
       height: 100%;
       left:-15px;
@@ -312,14 +312,14 @@
 
   .swiper-card{
     position: absolute;
-    background-color: white;
-    top:-120px;
-    left:45%;
+    background-color:white;
+    top:220px;
+    left:-5%;
     border-radius: 24pt 24pt 24pt 0pt;
 
     img{
       position: absolute;
-      top:-30%;
+      top:-15%;
       left:60%;
       width: 100px;
       height: 100px;
