@@ -17,11 +17,15 @@
   <body>
     <nav class="bg-dark navbar-fixed">
       <div class="rgb-border">
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <img class="col-2 py-3" src="./assets/images/logo.svg" alt="logo">
-            <div class="col-10">
-                <ul class="d-flex justify-content-end list-unstyled text-text mb-0 fs-7 lh-md">
+        <div class="container-xxl">
+          <div class="row justify-content-around justify-content-lg-center align-items-center ">
+            <img class="col-4 col-xs-4 col-md-4 col-lg-2 py-3" src="./assets/images/logo.svg" alt="logo">
+            <div class="col-8 col-xs-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center pe-5">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">
+                    <span class="material-icons text-white">menu</span>
+                </label>
+                <ul class="d-flex justify-content-end list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
                   <li class="me-4"><a class="link-light text-decoration-none" href="#">首頁</a></li>
                   <li class="me-4"><a class="link-light text-decoration-none" href="#">課程介紹</a></li>
                   <div class="d-flex">
@@ -39,7 +43,7 @@
 <div class="main-area">
   <div class="container-xxl">
     <div class="row justify-content-center">
-      <div class="border slogan-border col-6 d-flex flex-column justify-content-center align-items-center">
+      <div class="border slogan-border px-md-1 px-md-1 col-11 col-md-9 col-lg-6 d-flex flex-column justify-content-center align-items-center">
         <div class="square-1 bg-white"></div>
         <div class="square-2 bg-white"></div>
         <div class="square-3 bg-white"></div>
@@ -54,16 +58,16 @@
 <section class="spec bg-dark">
   <div class="container-xxl">
     <div class="row align-items-center gx-4">
-      <div class="col-3 pt-7 pb-7">
-        <div class="pt-5 pb-5 d-flex flex-column text-white">
-          <p class="mb-0 fs-3">手把手帶你</p>
+      <div class="d-flex justify-content-center col-sm-12 col-md-12 col-lg-3">
+        <div class="pt-5 pb-5 bg-black d-flex flex-column text-white">
+          <p class="mb-0 fs-3 text-center text-sm-center text-lg-start">手把手帶你</p>
           <div class="position-relative">
             <p class="fs-3">親自到家教到會</p>
             <div class="hue-line bg-primary"></div>
           </div>
         </div>
       </div>
-      <div class="card-1 col-3 pt-7 pb-7">
+      <div class="card-1 col-sm-12 col-md-4 col-lg-3">
         <div class="holder pt-5 pb-5 text-white  d-flex flex-column align-items-center">
           <span class="material-icons mb-4">code</span>
           <p class="fs-7">超過 100 種專業課程</p>
@@ -71,7 +75,7 @@
           <p class="fs-7 mb-0">培養運算思維和邏輯素養</p>
         </div>
       </div>
-      <div class="card-1 col-3 pt-7 pb-7">
+      <div class="card-1 col-sm-12 col-md-4 col-lg-3">
         <div class="pt-5 pb-5 text-white d-flex flex-column align-items-center">
           <span class="material-icons mb-4">rocket_launch</span>
           <p class="fs-7">高效學習</p>
@@ -79,7 +83,7 @@
           <p class="fs-7 mb-0">讓學習變簡單</p>
         </div>
       </div>
-      <div class=" card-1 col-3 pt-7 pb-7">
+      <div class=" card-1 col-sm-12 col-md-4 col-lg-3">
         <div class="pt-5 pb-5 text-white d-flex flex-column align-items-center">
           <span class="material-icons mb-4 gradient-text-custom">location_on</span>
           <p class="fs-7">指定地點</p>
@@ -93,38 +97,38 @@
 <section class="study-process bg-black">
   <div class="container-xxl">
     <div class="row justify-content-center">
-      <div class="pt-7 col-2 position-relative px-0">
+      <div class="pt-7 col-11 col-lg-2 position-relative px-0">
         <h2 class="text-white fs-3 lh-xl mb-0 pb-3 text-center">預期上課流程</h2>
         <div class="hue-line-2 bg-primary"></div>
       </div>
     </div>
-    <div class="row gx-4 card-2-layout">
-      <div class="col-3 position-relative">
-        <div class="border card-2 ps-5">
+    <div class="row gx-4 card-2-layout justify-content-center">
+      <div class="col-11 col-md-5 col-lg-3 position-relative h-100">
+        <div class="border card-2 ps-5 mb-5 mb-md-5 mb-lg-0">
           <p class="text-primary fs-1 hue-line-3 text-primary mb-0">01</p>
           <p class="fs-4 text-white pt-5">預約</p>
           <p class="fs-7 text-white pe-4 lh-s mb-0">線上預約指定課程與老師</p>
           <p class="fs-7 text-white pe-4 lh-s mb-0 pb-5">由老師安排專屬課程</p>
         </div>
       </div>
-      <div class="col-3 position-relative">
-        <div class="border card-2 ps-5">
+      <div class="col-11 col-md-5 col-lg-3 position-relative h-100">
+        <div class="border card-2 ps-5 mb-5 mb-md-5 mb-lg-0">
           <p class="text-primary fs-1 hue-line-3 mb-0">02</p>
           <p class="fs-4 text-white pt-5">付款</p>
           <p class="fs-7 text-white pe-4 lh-s mb-0">支援各種支付方式</p>
           <p class="fs-7 text-white pe-4 lh-s mb-0 pb-5">提供12期分期付款</p>
         </div>
       </div>
-      <div class="col-3 position-relative">
-        <div class="border card-2 ps-5">
+      <div class="col-11 col-md-5 col-lg-3 position-relative h-100">
+        <div class="border card-2 ps-5 mb-5 mb-md-5 mb-lg-0">
           <p class="text-primary fs-1 hue-line-3 mb-0">03</p>
           <p class="fs-4 text-white pt-5">上課</p>
           <p class="fs-7 text-white pe-4 lh-s mb-0">地點由您指定</p>
           <p class="fs-7 text-white pe-4 lh-s mb-0 pb-5">密集性一對一教學</p>
         </div>
       </div>
-      <div class="col-3 position-relative">
-        <div class="border card-2 ps-5">
+      <div class="col-11 col-md-5 col-lg-3 position-relative h-100">
+        <div class="border card-2 ps-5 mb-5 mb-md-5 mb-lg-0">
           <p class="text-primary fs-1 hue-line-3 mb-0">04</p>
           <p class="fs-4 text-white pt-5">提供滿意度</p>
           <p class="fs-7 text-white pe-4 lh-s mb-0">提供課程滿意度及回饋</p>
@@ -167,9 +171,9 @@
     </div>
   </div>
   <div class="container-xxl">
-    <div class="row gx-4 mt-5 mb-5">
-      <div class="col-3">
-        <div class="pt-4 border d-flex flex-column align-items-center card-4 bg-dark">
+    <div class="row gx-4 mt-5 mb-5"> <!----正常應爲gx-4---->
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
+        <div class="pt-4 border d-flex flex-column align-items-center card-4 bg-dark h-100">
           <img src="./assets/images/teacher01.jpg" alt="">
           <p class="mt-2 mb-4 fs-4 text-white">Belinda</p>
           <div class="border-bottom ps-4 pe-4">
@@ -183,8 +187,8 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
-        <div class="pt-4 border d-flex flex-column align-items-center card-4 bg-dark">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
+        <div class="pt-4 border d-flex flex-column align-items-center card-4 bg-dark h-100">
           <img src="./assets/images/teacher02.jpg" alt="">
           <p class="mt-2 mb-4 fs-4 text-white">Guava</p>
           <div class="border-bottom ps-4 pe-4">
@@ -198,8 +202,8 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
-        <div class="pt-4 border d-flex flex-column align-items-center card-4 bg-dark">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
+        <div class="pt-4 border d-flex flex-column align-items-center card-4 bg-dark h-100">
           <img src="./assets/images/teacher03.jpg" alt="">
           <p class="mt-2 mb-4 fs-4 text-white">Joe</p>
           <div class="border-bottom ps-4 pe-4">
@@ -213,14 +217,14 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
-        <div class="pt-4 border d-flex flex-column align-items-center card-4 bg-dark">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-lg-0">
+        <div class="pt-4 border d-flex flex-column align-items-center card-4 bg-dark h-100">
           <img src="./assets/images/student02.jpg" alt="">
           <p class="mt-2 mb-4 fs-4 text-white">Lina</p>
           <div class="border-bottom ps-4 pe-4">
             <p class="fs-6 text-white lh-sm mb-2">Linux 零基礎七天入門｜入門到實務</p>
             <p class="fs-6 text-primary lh-sm mb-2">作業系統與伺服器</p>
-            <p class="fs-8 text-white lh-sm mb-6">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
+            <p class="fs-8 text-white lh-sm mb-5">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
           </div>
           <div class="mt-3 pb-3 d-flex flex-row align-items-center">
             <p class="mb-0 text-white me-2 fs-8">50分鐘</p>
@@ -234,8 +238,8 @@
   </div>
 </section>
 <section class="benefit container-fluid px-0">
-  <div class="row flex-nowrap mx-0">
-    <div class="col-3 bgi-1 d-flex flex-column align-items-center pt-4 position-relative card-body">
+  <div class="row flex-sm-wrap flex-md-wrap flex-lg-nowrap mx-0">
+    <div class="col-md-12 col-lg-3 bgi-1 d-flex flex-column align-items-center pt-4 position-relative card-body">
       <div class="card-padding context-z-index">
         <span class="material-icons text-white">forum</span>
         <div class="position-relative">
@@ -247,7 +251,7 @@
       </div>
       <div class="hue-line-6"></div>
     </div>
-    <div class="col-3 bgi-2 d-flex flex-column align-items-center pt-4 position-relative card-body">
+    <div class="col-md-12 col-lg-3 bgi-2 d-flex flex-column align-items-center pt-4 position-relative card-body">
       <div class="card-padding context-z-index">
         <span class="material-icons text-primary">lightbulb</span>
         <div class="position-relative">
@@ -259,7 +263,7 @@
       </div>
       <div class="hue-line-6"></div>
     </div>
-    <div class="col-3 bgi-3 d-flex flex-column align-items-center pt-4 position-relative card-body">
+    <div class="col-md-12 col-lg-3 bgi-3 d-flex flex-column align-items-center pt-4 position-relative card-body">
       <div class="card-padding context-z-index">
         <span class="material-icons text-white">thumb_up_alt</span>
         <div class="position-relative">
@@ -271,7 +275,7 @@
       </div>
       <div class="hue-line-6"></div>
     </div>
-    <div class="col-3 bgi-4 d-flex flex-column align-items-center pt-4 position-relative card-body">
+    <div class="col-md-12 col-lg-3 bgi-4 d-flex flex-column align-items-center pt-4 position-relative card-body">
       <div class="card-padding context-z-index">
         <span class="material-icons text-white">supervisor_account</span>
         <div class="position-relative">
@@ -288,15 +292,15 @@
 <section class="articles pb-5">
   <div class="container-xxl">
     <div class="row justify-content-center">
-      <div class="pt-7 col-2 position-relative">
+      <div class="pt-7 col-11 col-lg-2 position-relative">
         <h2 class="text-white fs-3 lh-xl mb-0 pb-3 text-center">文章分享</h2>
         <div class="hue-line-7 bg-primary"></div>
       </div>
     </div>
   </div>
   <div class="container mt-5">
-    <ul class="row gx-5 list-unstyled">
-      <li class="col-4 card-body-5 py-6">
+    <ul class="row gx-5 list-unstyled justify-content-center">
+      <li class="col-10 col-md-4 col-lg-4 card-body-5 py-6">
         <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
         <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
         <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
@@ -308,7 +312,7 @@
           <p class="text-primary mb-0">More</p>
         </div>
       </li>
-      <li class="col-4 card-body-5 py-6">
+      <li class="col-10 col-md-4 col-lg-4 card-body-5 py-6">
         <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
         <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
         <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
@@ -320,7 +324,7 @@
           <p class="text-primary mb-0">More</p>
         </div>
       </li>
-      <li class="col-4 card-body-5 py-6">
+      <li class="col-10 col-md-4 col-lg-4 card-body-5 py-6">
         <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
         <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
         <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
@@ -347,10 +351,8 @@
     <div class="row justify-content-center">
       <div class="">
         <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="me-3 swiper-slide position-relative d-flex justify-content-center">
+          <div class="swiper-wrapper pb-7">
+            <div class="ps-7 swiper-slide position-relative d-flex justify-content-center">
               <div class="swiper-img col-5 position-relative">
                 <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="">
               </div>
@@ -360,7 +362,7 @@
                 <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/student01.jpg?raw=true" alt="" class="card-img">
               </div>
             </div>
-            <div class="me-3 swiper-slide position-relative d-flex justify-content-center">
+            <div class="ps-7 swiper-slide position-relative d-flex justify-content-center">
               <div class="swiper-img col-5 position-relative">
                 <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="">
               </div>
@@ -370,7 +372,7 @@
                 <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/student01.jpg?raw=true" alt="" class="card-img">
               </div>
             </div>
-            <div class="me-3 swiper-slide position-relative d-flex justify-content-center">
+            <div class="ps-7 swiper-slide position-relative d-flex justify-content-center">
               <div class="swiper-img col-5 position-relative">
                 <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="">
               </div>
@@ -381,9 +383,27 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="d-flex flex-row align-items-center justify-content-center swiper-buttons">
+            <span class="material-icons swiper-button-prev fs-md link-primary me-4">west</span>
+            <div class="swiper-pagination d-flex"></div>
+            <span class="material-icons swiper-button-next fs-md link-primary ms-4">east</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="join-us bg-black py-7">
+  <div div="container-xxl">
+    <div class="row justify-content-center mx-0">
+      <div class="col-9">
+        <div class="card-8 border d-flex flex-column flex-md-row flex-lg-row justify-content-around align-items-center py-5">
+          <span class="material-icons text-white menu-book">menu_book</span>
+          <div class="d-flex flex-column">
+            <h2 class="text-white text-center text-lg-start fs-3">加入我們成為導師</h2>
+            <p class="text-white fs-7 mb-0">歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
+          </div>
+          <button type="button" class="btn btn-lg btn-white">立即預約</button>
         </div>
       </div>
     </div>
