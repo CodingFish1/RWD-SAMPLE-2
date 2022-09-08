@@ -1,8 +1,4 @@
-.navbar-fixed{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+.navbar-layout{
 
     .burger-menu{
         label{
@@ -18,13 +14,25 @@
         .rgb-border{
             ::before {
                 content: '';
-                display: none;
+                position: absolute;
+                display: block;
+                top:100%;
+                left:50%;
+                width: 50%;
+                height: 3px;
+                background:#62DB54;
             }
         
             ::after {
                 content: '';
-                display: none
-            }
+                position: absolute;
+                display: block;
+                top:100%;
+                left:0%;
+                width: 50%;
+                height: 3px;
+                background:#09ACF5;
+                  }
         }
 
         .burger-menu{
@@ -65,7 +73,6 @@
 
 
 .rgb-border{
-    position: relative;
 
     ::before {
         content: '';

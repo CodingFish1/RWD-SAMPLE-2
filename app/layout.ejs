@@ -15,20 +15,20 @@
   </head>
 
   <body>
-    <nav class="bg-dark navbar-fixed">
-      <div class="rgb-border">
-        <div class="container-xxl">
+    <nav class="bg-dark fixed-top navbar-layout">
+      <div class="">
+        <div class="container-xxl rgb-border">
           <div class="row justify-content-around justify-content-lg-center align-items-center ">
-            <img class="col-4 col-xs-4 col-md-4 col-lg-2 py-3" src="./assets/images/logo.svg" alt="logo">
-            <div class="col-8 col-xs-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center pe-5">
+            <img class="col-4 col-sm-4 col-md-4 col-lg-2 py-3" src="./assets/images/logo.svg" alt="logo">
+            <div class="col-8 col-sm-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center pe-5">
                 <input type="checkbox" id="toggle">
                 <label for="toggle">
                     <span class="material-icons text-white">menu</span>
                 </label>
                 <ul class="d-flex justify-content-end list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
-                  <li class="me-4"><a class="link-light text-decoration-none" href="#">首頁</a></li>
-                  <li class="me-4"><a class="link-light text-decoration-none" href="#">課程介紹</a></li>
-                  <div class="d-flex">
+                  <li class="me-4 py-4 py-md-0"><a class="link-light text-decoration-none" href="#">首頁</a></li>
+                  <li class="me-4 pb-4 pb-md-0"><a class="link-light text-decoration-none" href="#">課程介紹</a></li>
+                  <div class="d-flex pb-4 pb-md-0">
                     <li><a href="#" class="link-light"><span class="material-icons mb-0">account_circle</span></a></li>
                     <li><a href="#" class="link-light text-decoration-none">登入</a></li>
                   </div>
@@ -41,8 +41,12 @@
 
     <%- contents %>
 
-    <footer class="footer">
-      <!-- footer -->
+    <footer class="footer container-fluid bg-dark">
+      <div class="row flex-row justify-content-center">
+        <div class="col-4 py-4">
+          <p class="text-white text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
+        </div>
+      </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
