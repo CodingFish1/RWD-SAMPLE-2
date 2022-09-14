@@ -83,9 +83,12 @@
   .hue-line{
     position:absolute;
     top:100%;
-    left:0%;
+    left:55px;
     height: 3px;
     width:20%;
+    // @media (max-width:576px) {
+    //   left:55px;
+    // }
   }
 
 }
@@ -279,7 +282,7 @@
 
 /************/
 .feedback {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_share.jpg?raw=true);
+  background-image: url(../images/bg_share.jpg);
   height: 733px;
   background-repeat: no-repeat;
   background-position: center;

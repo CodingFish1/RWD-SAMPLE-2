@@ -9,32 +9,32 @@
             display:none;
         }
       }
+    
+    .rgb-border{
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            top:100%;
+            left:50%;
+            width: 50%;
+            height: 3px;
+            background:#62DB54;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            top:100%;
+            left:0%;
+            width: 50%;
+            height: 3px;
+            background:#09ACF5;
+        }
+    }
 
     @media(max-width:767px){
-        .rgb-border{
-            ::before {
-                content: '';
-                position: absolute;
-                display: block;
-                top:100%;
-                left:50%;
-                width: 50%;
-                height: 3px;
-                background:#62DB54;
-            }
-        
-            ::after {
-                content: '';
-                position: absolute;
-                display: block;
-                top:100%;
-                left:0%;
-                width: 50%;
-                height: 3px;
-                background:#09ACF5;
-                  }
-        }
-
         .burger-menu{
             label{
                 display:block;
@@ -57,7 +57,7 @@
             /* height: 100%; ????????*/
             background-color: #2D2D2D;
             transform:translateY(-200%);
-            transition: all 1s;
+            transition: all 0.5s;
         }
 
         #toggle:checked ~ .menu-content-layout {
@@ -68,31 +68,4 @@
             border:1px solid white;
         }
     }
-}
-
-
-
-.rgb-border{
-
-    ::before {
-        content: '';
-        position: absolute;
-        display: block;
-        top:100%;
-        left:50%;
-        width: 50%;
-        height: 3px;
-        background:#62DB54;
-    }
-
-    ::after {
-        content: '';
-        position: absolute;
-        display: block;
-        top:100%;
-        left:0%;
-        width: 50%;
-        height: 3px;
-        background:#09ACF5;
-          }
 }
