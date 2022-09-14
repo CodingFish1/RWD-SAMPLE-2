@@ -13003,8 +13003,8 @@ img {
 .study-process .hue-line-3 {
   line-height: 56px;
   position: absolute;
-  top: -15%;
-  left: 20;
+  top: -30px;
+  left: 20%;
   background-color: black;
 }
 
@@ -13318,6 +13318,10 @@ img {
   width: auto;
 }
 
+.swiper .swiper-pagination-bullets {
+  width: 10%;
+}
+
 .swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #62DB54;
   opacity: initial;
@@ -13413,9 +13417,9 @@ img {
     -webkit-transform: translateY(-200%);
         -ms-transform: translateY(-200%);
             transform: translateY(-200%);
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
   }
   .navbar-layout #toggle:checked ~ .menu-content-layout {
     -webkit-transform: translateY(0%);
