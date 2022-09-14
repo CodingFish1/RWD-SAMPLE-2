@@ -390,10 +390,6 @@
   .swiper-pagination {
     position: unset;
     width: auto;
-
-    &-bullets{
-      width: 10%;
-    }
     .swiper-pagination-bullet {
       background-color: #62DB54;
       opacity: initial;
@@ -403,7 +399,6 @@
       }
     }
   }
-
   &-buttons {
     bottom: 0;
     left: 30%;
@@ -415,6 +410,14 @@
       transform: none;
     }
   }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal{
+    width: 100%;
+    @media (max-width: 768px) {
+      width: 30%;
+    }
+}
+
 }
 
 /*******Join us*********/
