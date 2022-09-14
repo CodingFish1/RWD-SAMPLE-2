@@ -12986,7 +12986,7 @@ img {
 .spec .hue-line {
   position: absolute;
   top: 100%;
-  left: 0%;
+  left: 55px;
   height: 3px;
   width: 20%;
 }
@@ -13172,7 +13172,7 @@ img {
 
 /************/
 .feedback {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_share.jpg?raw=true);
+  background-image: url(../images/bg_share.jpg);
   height: 733px;
   background-repeat: no-repeat;
   background-position: center;
@@ -13369,27 +13369,29 @@ img {
   display: none;
 }
 
+.navbar-layout .rgb-border::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 50%;
+  width: 50%;
+  height: 3px;
+  background: #62DB54;
+}
+
+.navbar-layout .rgb-border::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0%;
+  width: 50%;
+  height: 3px;
+  background: #09ACF5;
+}
+
 @media (max-width: 767px) {
-  .navbar-layout .rgb-border ::before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 100%;
-    left: 50%;
-    width: 50%;
-    height: 3px;
-    background: #62DB54;
-  }
-  .navbar-layout .rgb-border ::after {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 100%;
-    left: 0%;
-    width: 50%;
-    height: 3px;
-    background: #09ACF5;
-  }
   .navbar-layout .burger-menu label {
     display: block;
   }
@@ -13417,9 +13419,9 @@ img {
     -webkit-transform: translateY(-200%);
         -ms-transform: translateY(-200%);
             transform: translateY(-200%);
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .navbar-layout #toggle:checked ~ .menu-content-layout {
     -webkit-transform: translateY(0%);
@@ -13429,28 +13431,6 @@ img {
   .navbar-layout #toggle:checked ~ .menu-content-layout {
     border: 1px solid white;
   }
-}
-
-.rgb-border ::before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 100%;
-  left: 50%;
-  width: 50%;
-  height: 3px;
-  background: #62DB54;
-}
-
-.rgb-border ::after {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 100%;
-  left: 0%;
-  width: 50%;
-  height: 3px;
-  background: #09ACF5;
 }
 
 /*# sourceMappingURL=all.css.map */
