@@ -13318,10 +13318,6 @@ img {
   width: auto;
 }
 
-.swiper .swiper-pagination-bullets {
-  width: 10%;
-}
-
 .swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #62DB54;
   opacity: initial;
@@ -13348,6 +13344,16 @@ img {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+  }
+}
+
+.swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 30%;
   }
 }
 
