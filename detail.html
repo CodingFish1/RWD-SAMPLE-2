@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.js"></script>
+  </head>
+
+  <body>
+    <nav class="fixed-top navbar-layout" id="barWatcher">
+      <div class="rgb-border">
+        <div class="container-fluid">
+          <div class="bg-dark row justify-content-around justify-content-lg-center align-items-center ">
+            <img class="col-4 col-sm-4 col-md-4 col-lg-2 py-3 px-2 px-md-4 px-lg-5" src="./assets/images/logo.svg" alt="logo">
+            <div class="col-8 col-sm-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center px-2 px-md-4 px-lg-5">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">
+                    <span class="material-icons text-primary">menu</span>
+                </label>
+                <ul class="d-flex justify-content-center list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
+                  <li class="me-md-4 py-4 py-md-0"><a class="link-light text-decoration-none" href="#">首頁</a></li>
+                  <li class="me-md-4 pb-4 pb-md-0"><a class="link-light text-decoration-none" href="./course.html">課程介紹</a></li>
+                  <div class="d-flex pb-4 pb-md-0">
+                    <li><a href="#" class="link-light"><span class="material-icons mb-0">account_circle</span></a></li>
+                    <li><a href="#" class="link-light text-decoration-none">登入</a></li>
+                  </div>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div id="navbar-filler">
+      </div>
+    </div>
+
+    
+<section class="bg-bdark py-7 py-lg-9">
+    <div class="container-xxl">
+        <div class="row flex-row justify-content-center">
+            <div class="col-lg-7">
+                <div class="radius-card bg-dark d-flex flex-column flex-lg-row py-5 pe-lg-5 mb-6">
+                    <div class="col-lg-3 cc-icon d-flex flex-column align-items-center">
+                        <img src="./assets/images/teacher01.jpg" alt="">
+                        <p class="text-white fs-8 mb-0 mt-1">Belinda</p>
+                    </div>
+                    <div class="col-12 col-lg-9 px-4 px-lg-6 cc-content d-flex flex-column justify-content-center">
+                        <h2 class="text-white fs-4">基礎前端 - HTML</h2>
+                        <h3 class="text-primary fs-8">前端語言</h3>
+                        <h3 class="text-white fs-8">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</h3>
+                    </div>
+                </div>
+                <div class="teacher-intro">
+                    <h2 class="fs-6 text-white mb-3">老師介紹</h2>
+                    <div class="bg-dark d-flex flex-column radius-card px-4 px-lg-6 py-6">
+                        <div class="d-flex flex-column flex-md-row flex-lg-row">
+                            <div class="d-flex flex-column">
+                                <ul class="d-flex flex-row align-items-center list-unstyled">
+                                    <li><span class="material-icons text-primary fs-4 me-2">school</span></li>
+                                    <li><h2 class="text-light fs-7 me-2">學歷</h2></li>
+                                    <li><h2 class="text-white fs-7">國立中央大學 資訊工程 碩士 畢業</h2></li>
+                                </ul>
+                                <ul class="d-flex flex-row align-items-center list-unstyled">
+                                    <li><span class="material-icons text-primary fs-4 me-2">business_center</span></li>
+                                    <li><h2 class="text-light fs-7 me-2">經歷</h2></li>
+                                    <li><h2 class="text-white fs-7 me-0 me-lg-2">2020.08 - 迄今 上市企業 韌體工程師</h2></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <ul class="d-flex flex-row align-items-center list-unstyled">
+                                    <li><span class="material-icons text-primary fs-4 me-2">translate</span></li>
+                                    <li><h2 class="text-light fs-7 me-2">語言</h2></li>
+                                    <li><h2 class="text-white fs-7">中文/英文</h2></li>
+                                </ul>
+                                <ul class="d-flex flex-row align-items-center list-unstyled">
+                                    <li><span class="material-icons text-primary fs-4 me-2">military_tech</span></li>
+                                    <li><h2 class="text-light fs-7 me-2">等級</h2></li>
+                                    <li><h2 class="text-white fs-7">入門</h2></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="border-top">
+                            <h2 class="text-white fs-8 pt-6">目前任職於上市企業 韌體工程師，撰寫各種微控制器韌體程式，如作業系統、系統軟體、裝置控制程式、驅動程式、網路應用程式、系統整合程式、數位訊號處理程式等。<br><br>興趣是幫助他人學習程式語言，我相信，透過清楚的講解與示範，任何人都可以學好編寫程式與電腦科學中的複雜概念</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-brief">
+                    <h2 class="fs-6 text-white my-3">課程介紹</h2>
+                    <div class="bg-dark radius-card py-6">
+                        <h2 class="fs-7 text-white ms-6 primary-boarder ps-2">這堂課你將會學到：</h2>
+                        <ul class="ms-3">
+                            <li class="text-white">網頁設計，基礎知識</li>
+                            <li class="text-white">HTML 語法，概念實作能力</li>
+                            <li class="text-white">CSS , Javascript 概念與知識</li>
+                            <li class="text-white">能做出一個基礎的HTML 網頁</li>
+                        </ul>
+                        <h2 class="fs-7 text-white ms-6 primary-boarder ps-2">什麼是 HTML，為什麼要打造網頁，就一定要先學它？</h2>
+                        <h3 class="fs-8 text-white px-6">HTML元素是構建網站的基石。HTML允許嵌入圖像與物件，並且可以用於建立互動式表單，它被用來結構化資訊——例如標題、段落和列表等等，也可用來在一定程度上描述文件的外觀和語意。 當你掌握了HTML，就可以開始規劃並建置你想要的網頁內容 !</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 plan-card border mt-5 mt-lg-0 pt-4 px-6 ms-lg-2">
+                <ul class="border-bottom ps-0">
+                    <li class="py-3 d-flex flex-row justify-content-between align-items-center">
+                        <div class="">
+                            <h2 class="fs-4 text-white">NT$1600</h2>
+                            <h3 class="fs-8 text-white">1堂50分鐘</h3>
+                        </div>
+                        <span class="material-icons text-white">arrow_forward_ios</span>
+                    </li>
+                </ul>
+                <ul class="border-bottom ps-0">
+                    <li class="py-3 d-flex flex-row justify-content-between align-items-center">
+                        <div class="">
+                            <h2 class="fs-4 text-white">NT$1600</h2>
+                            <h3 class="fs-8 text-white">1堂50分鐘</h3>
+                        </div>
+                        <span class="material-icons text-white">arrow_forward_ios</span>
+                    </li>
+                </ul>
+                <ul class="border-bottom ps-0">
+                    <li class="py-3 d-flex flex-row justify-content-between align-items-center">
+                        <div class="">
+                            <h2 class="fs-4 text-white">NT$1600</h2>
+                            <h3 class="fs-8 text-white">1堂50分鐘</h3>
+                        </div>
+                        <span class="material-icons text-white">arrow_forward_ios</span>
+                    </li>
+                </ul>
+                <ul class="border-bottom ps-0">
+                    <li class="py-3 d-flex flex-row justify-content-between align-items-center">
+                        <div class="">
+                            <h2 class="fs-4 text-white">NT$1600</h2>
+                            <h3 class="fs-8 text-white">1堂50分鐘</h3>
+                        </div>
+                        <span class="material-icons text-white">arrow_forward_ios</span>
+                    </li>
+                </ul>
+                <ul class="ps-0">
+                    <li class="py-3 d-flex flex-row justify-content-between align-items-center">
+                        <div class="">
+                            <h2 class="fs-4 text-white">NT$1600</h2>
+                            <h3 class="fs-8 text-white">1堂50分鐘</h3>
+                        </div>
+                        <span class="material-icons text-white">arrow_forward_ios</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="relative-courses bg-black">
+    <div class="container-xxl pb-11">
+        <h2 class="col-lg-12 text-center fs-3 text-white pt-11 mb-0">其他人也看了這些課程</h2>
+        <div class="row gx-4 mt-6"> <!----正常應爲gx-4---->
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
+              <div class="pt-4 border radius-card d-flex flex-column align-items-center card-4 bg-dark">
+                <img src="./assets/images/teacher01.jpg" alt="">
+                <p class="mt-2 mb-4 fs-4 text-white">Belinda</p>
+                <div class="border-bottom ps-4 pe-4">
+                  <p class="fs-6 text-white lh-sm mb-6">基礎前端 - HTML</p>
+                  <p class="fs-6 text-primary lh-sm mb-2">前端語言</p>
+                  <p class="fs-8 text-white lh-sm mb-6">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+                </div>
+                <div class="mt-3 pb-3 d-flex flex-row align-items-center">
+                  <p class="mb-0 text-white me-2 fs-8">50分鐘</p>
+                  <p class="mb-0 text-white fs-2 lh-sm">NT$1600</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
+              <div class="pt-4 border radius-card d-flex flex-column align-items-center card-4 bg-dark h-100">
+                <img src="./assets/images/teacher02.jpg" alt="">
+                <p class="mt-2 mb-4 fs-4 text-white">Guava</p>
+                <div class="border-bottom ps-4 pe-4">
+                  <p class="fs-6 text-white lh-sm mb-2">2022 Python 全攻略｜從入門到實務</p>
+                  <p class="fs-6 text-primary lh-sm mb-2">後端語言</p>
+                  <p class="fs-8 text-white lh-sm mb-6">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
+                </div>
+                <div class="mt-3 pb-3 d-flex flex-row align-items-center">
+                  <p class="mb-0 text-white me-2 fs-8">50分鐘</p>
+                  <p class="mb-0 text-white fs-2 lh-sm">NT$2200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
+              <div class="pt-4 border radius-card d-flex flex-column align-items-center card-4 bg-dark h-100">
+                <img src="./assets/images/teacher03.jpg" alt="">
+                <p class="mt-2 mb-4 fs-4 text-white">Joe</p>
+                <div class="border-bottom ps-4 pe-4">
+                  <p class="fs-6 text-white lh-sm mb-2">活用 Line Bot ｜APP 開發到上架完整實戰攻略</p>
+                  <p class="fs-6 text-primary lh-sm mb-2">行動應用開發</p>
+                  <p class="fs-8 text-white lh-sm mb-6">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
+                </div>
+                <div class="mt-3 pb-3 d-flex flex-row align-items-center">
+                  <p class="mb-0 text-white me-2 fs-8">50分鐘</p>
+                  <p class="mb-0 text-white fs-2 lh-sm">NT$1800</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-lg-0">
+              <div class="pt-4 border radius-card d-flex flex-column align-items-center card-4 bg-dark h-100">
+                <img src="./assets/images/teacher04.jpg" alt="">
+                <p class="mt-2 mb-4 fs-4 text-white">Lina</p>
+                <div class="border-bottom ps-4 pe-4">
+                  <p class="fs-6 text-white lh-sm mb-2">Linux 零基礎七天入門｜入門到實務</p>
+                  <p class="fs-6 text-primary lh-sm mb-2">作業系統與伺服器</p>
+                  <p class="fs-8 text-white lh-sm mb-5">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
+                </div>
+                <div class="mt-3 pb-3 d-flex flex-row align-items-center">
+                  <p class="mb-0 text-white me-2 fs-8">50分鐘</p>
+                  <p class="mb-0 text-white fs-2 lh-sm">NT$1100</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer container-fluid bg-dark">
+      <div class="row flex-row justify-content-center">
+        <div class="col-12 col-lg-4 py-4">
+          <p class="text-white text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
