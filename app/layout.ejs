@@ -15,46 +15,48 @@
   </head>
 
   <body>
-    <nav class="fixed-top navbar-layout" id="barWatcher">
-      <div class="rgb-border">
-        <div class="container-fluid">
-          <div class="bg-dark row justify-content-around justify-content-lg-center align-items-center ">
-            <img class="col-4 col-sm-4 col-md-4 col-lg-2 py-3 px-2 px-md-4 px-lg-5" src="./assets/images/logo.svg" alt="logo">
-            <div class="col-8 col-sm-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center px-2 px-md-4 px-lg-5">
-                <input type="checkbox" id="toggle">
-                <label for="toggle">
-                    <span class="material-icons text-primary">menu</span>
-                </label>
-                <ul class="d-flex justify-content-center list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
-                  <li class="me-md-4 py-4 py-md-0"><a class="link-light text-decoration-none" href="#">首頁</a></li>
-                  <li class="me-md-4 pb-4 pb-md-0"><a class="link-light text-decoration-none" href="./course.html">課程介紹</a></li>
-                  <div class="d-flex pb-4 pb-md-0">
-                    <li><a href="#" class="link-light"><span class="material-icons mb-0">account_circle</span></a></li>
-                    <li><a href="#" class="link-light text-decoration-none">登入</a></li>
-                  </div>
-                </ul>
+    <div class="scroller">
+      <nav class="fixed-top navbar-layout" id="barWatcher">
+        <div class="rgb-border">
+          <div class="container-fluid">
+            <div class="bg-dark row justify-content-around justify-content-lg-center align-items-center ">
+              <img class="col-4 col-sm-4 col-md-4 col-lg-2 py-3 px-2 px-md-4 px-lg-5" src="./assets/images/logo.svg" alt="logo">
+              <div class="col-8 col-sm-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center px-2 px-md-4 px-lg-5">
+                  <input type="checkbox" id="toggle">
+                  <label for="toggle">
+                      <span class="material-icons text-primary">menu</span>
+                  </label>
+                  <ul class="d-flex justify-content-center list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
+                    <li class="me-md-4 py-4 py-md-0"><a class="link-light text-decoration-none" href="#">首頁</a></li>
+                    <li class="me-md-4 pb-4 pb-md-0"><a class="link-light text-decoration-none" href="./course.html">課程介紹</a></li>
+                    <div class="d-flex pb-4 pb-md-0">
+                      <li><a href="#" class="link-light"><span class="material-icons mb-0">account_circle</span></a></li>
+                      <li><a href="#" class="link-light text-decoration-none">登入</a></li>
+                    </div>
+                  </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <div class="container-fluid">
-      <div id="navbar-filler">
-      </div>
-    </div>
-
-    <%- contents %>
-
-    <footer class="footer container-fluid bg-dark">
-      <div class="row flex-row justify-content-center">
-        <div class="col-12 col-lg-4 py-4">
-          <p class="text-white text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
+      </nav>
+      <div class="container-fluid">
+        <div id="navbar-filler">
         </div>
       </div>
-    </footer>
-
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+  
+      <%- contents %>
+  
+      <footer class="footer container-fluid bg-dark">
+        <div class="row flex-row justify-content-center">
+          <div class="col-12 col-lg-4 py-4">
+            <p class="text-white text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="./assets/js/vendors.js"></script>
+      <script src="./assets/js/all.js"></script>
+    </body>
+  </div>
 
 </html>

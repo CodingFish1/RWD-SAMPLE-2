@@ -1,16 +1,11 @@
-let headerHeight = null;
-
 const resizeObserver = new ResizeObserver((entries) => {
   entries.forEach((entry) => {
       const heightChanger = document.querySelector('#navbar-filler')
-      headerHeight = '-' + entry.contentRect.height + 3
       heightChanger.style.height = entry.contentRect.height + 3 + 'px'
-      console.log(headerHeight);
     })
   })
   resizeObserver.observe(document.querySelector('#barWatcher'))
 
-  // const header = document.querySelector("header");
   // const section =["One","Two","Three","Four","Five","Six","Seven","Eight"]
   // section.forEach(item=>{
   //   const section + item = 
@@ -23,17 +18,17 @@ const resizeObserver = new ResizeObserver((entries) => {
   // const sectionSix = document.querySelector("#sectionSix");
   // const sectionSeven= document.querySelector("#sectionSeven");
   // const sectionEight = document.querySelector("#sectionEight");
-    const sections = [...document.querySelectorAll("section")]
-    console.log(sections);
-    sections.forEach((item) => {
-      // const item.id = document.querySelector(`'#'+${item}`)
-      console.log(item.id);
-    })
+    // const sections = [...document.querySelectorAll("section")]
+    // console.log(sections);
+    // sections.forEach((item) => {
+    //   const item.id = document.querySelector(`'#'+${item}`)
+    //   console.log(item.id);
+    // })
   
-  const sectionOneOptions = {
-    rootMargin: "-200px 0px 0px 0px"
-    // rootMargin: `${headerHeight}px`
-  };
+  // const sectionOneOptions = {
+  //   rootMargin: "-200px 0px 0px 0px"
+  //   rootMargin: `${headerHeight}px`
+  // };
   
   // const sectionObserverCallback = new IntersectionObserver(function(
   //   entries) {
@@ -67,3 +62,35 @@ const resizeObserver = new ResizeObserver((entries) => {
   // sectionObserverCallback.observe(sectionSix);
   // sectionObserverCallback.observe(sectionSeven);
   // sectionObserverCallback.observe(sectionEight);
+
+  const header = document.querySelector("nav");  
+  const sections = document.querySelectorAll("section");
+  const scrollRoot = document.querySelector('.scroller');
+  let direction = 'up';
+  let prevYPosition = 0;
+  
+  sections.forEach(item => {
+    const options ={
+                    rootMargin: `${header.offsetHeight * -1}px`,
+                    threshold: 0
+                    }
+    const observer = new IntersectionObserver(interSectionObserverCallback, options);
+    observer.observe(item);
+  })
+  
+  function interSectionObserverCallback(entries){
+    
+
+    entries.forEach(entry => {
+      if(entry.isIntersecting) { console.log(entry.target.id) }
+
+      // if (scrollRoot.scrollTop > prevYPosition) {
+      //   direction = 'down'
+      //   console.log(direction);
+      // } else {
+      //   direction = 'up'
+      //   // console.log(scrollRoot);
+      //   console.log(direction);
+      // }
+    })
+  }
