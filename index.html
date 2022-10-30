@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.95">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
@@ -12,39 +12,81 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./assets/js/swiper.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
   </head>
 
   <body>
-    <div class="scroller">
-      <nav class="fixed-top navbar-layout" id="barWatcher">
-        <div class="rgb-border">
-          <div class="container-fluid">
-            <div class="bg-dark row justify-content-around justify-content-lg-center align-items-center ">
-              <img class="col-4 col-sm-4 col-md-4 col-lg-2 py-3 px-2 px-md-4 px-lg-5" src="./assets/images/logo.svg" alt="logo">
-              <div class="col-8 col-sm-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center px-2 px-md-4 px-lg-5">
-                  <input type="checkbox" id="toggle">
-                  <label for="toggle">
-                      <span class="material-icons text-primary">menu</span>
-                  </label>
-                  <ul class="d-flex justify-content-center list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
-                    <li class="me-md-4 py-4 py-md-0"><a class="link-light text-decoration-none" href="#">首頁</a></li>
-                    <li class="me-md-4 pb-4 pb-md-0"><a class="link-light text-decoration-none" href="./course.html">課程介紹</a></li>
-                    <div class="d-flex pb-4 pb-md-0">
-                      <li><a href="#" class="link-light"><span class="material-icons mb-0">account_circle</span></a></li>
-                      <li><a href="#" class="link-light text-decoration-none">登入</a></li>
-                    </div>
-                  </ul>
-              </div>
+    <nav class="fixed-top navbar-layout" id="barWatcher">
+      <div class="rgb-border">
+        <div class="container-fluid">
+          <div class="bg-dark row justify-content-around justify-content-lg-center align-items-center ">
+            <img class="col-4 col-sm-4 col-md-4 col-lg-2 py-3 px-2 px-md-4 px-lg-5" src="./assets/images/logo.svg" alt="logo">
+            <div class="col-8 col-sm-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center px-2 px-md-4 px-lg-5">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">
+                    <span class="material-icons text-primary">menu</span>
+                </label>
+                <ul class="d-flex justify-content-center list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
+                  <li class="me-md-4 py-4 py-md-0"><a class="link-light text-decoration-none" href="#">首頁</a></li>
+                  <li class="me-md-4 pb-4 pb-md-0"><a class="link-light text-decoration-none" href="./course.html">課程介紹</a></li>
+                  <div class="d-flex pb-4 pb-md-0">
+                    <li><a href="#" class="link-light"><span class="material-icons mb-0">account_circle</span></a></li>
+                    <li><a href="#" class="link-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#openMe">登入</a></li>
+                  </div>
+                </ul>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="container-fluid">
-        <div id="navbar-filler">
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div id="navbar-filler">
+      </div>
+    </div>
+    <div class="modal fade" id="openMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header d-flex flex-row border-0">
+            <h6 class="modal-title text-white" id="exampleModalLabel">登入</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pb-6">
+            <form>
+              <div class="form-group mb-4">
+                <label for="exampleInputEmail1 text-white">信箱</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入信箱">
+              </div>
+              <div class="form-group mb-4">
+                <label for="exampleInputPassword1">密碼</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入密碼">
+              </div>
+              <button type="submit" class="btn gradient-custom col-12">登入</button>
+              <div class="d-flex flex-row align-items-center justify-content-between mt-6">
+                <div class="decoration-line align-self-center"></div>
+                <p class="text-center text-white mb-0">其他登入方式</p>
+                <div class="decoration-line align-self-center"></div>
+              </div>
+              <a href="" class="custom-btn col-12 mt-4 text-white rounded justify-content-center justify-content-lg-start">
+                <div class="col-8 d-flex justify-content-around ms-3">
+                  <img src="./assets/images/icon_google.svg" class="">
+                  <p class="align-self-center mb-0">Google 登入</p>
+                </div>
+              </a>
+              <a href="" class="custom-btn col-12 mt-4 text-white rounded justify-content-center justify-content-lg-start">
+                <div class="col-8 d-flex justify-content-around ms-3">
+                  <img src="./assets/images/icon_fb.svg" class="">
+                  <p class="align-self-center mb-0">Facebook 登入</p>
+                </div>
+              </a>
+            </form>
+          </div>
         </div>
       </div>
-  
-      
+    </div>
+
+    
 <div class="main-area">
   <div class="container-xxl">
     <div class="row justify-content-center">
@@ -60,8 +102,8 @@
     </div>
   </div>
 </div>
-<section class="spec bg-dark" id="sectionOne" data-section="black">
-  <div class="container-xxl">
+<section class="spec bg-dark">
+  <div class="container-xxl py-7">
     <div class="row align-items-center gx-4">
       <div class="d-flex justify-content-center col-sm-12 col-md-12 col-lg-3">
         <div class="pt-5 pb-5 d-flex flex-column text-white">
@@ -73,7 +115,7 @@
         </div>
       </div>
       <div class="card-1 col-sm-12 col-md-4 col-lg-3">
-        <div class="holder pt-5 pb-5 text-white  d-flex flex-column align-items-center">
+        <div class="pt-5 pb-5 text-white  d-flex flex-column align-items-center">
           <span class="material-icons mb-4">code</span>
           <p class="fs-7">超過 100 種專業課程</p>
           <p class="fs-7 mb-0">學習標準化的電腦形式語言</p>
@@ -88,7 +130,7 @@
           <p class="fs-7 mb-0">讓學習變簡單</p>
         </div>
       </div>
-      <div class=" card-1 col-sm-12 col-md-4 col-lg-3">
+      <div class="card-1 col-sm-12 col-md-4 col-lg-3">
         <div class="pt-5 pb-5 text-white d-flex flex-column align-items-center">
           <span class="material-icons mb-4 gradient-text-custom">location_on</span>
           <p class="fs-7">指定地點</p>
@@ -99,7 +141,7 @@
     </div>
   </div>
 </section>
-<section class="study-process bg-black" id="sectionTwo" data-section="white">
+<section class="study-process bg-black">
   <div class="container-xxl">
     <div class="row justify-content-center">
       <div class="pt-7 col-11 col-lg-2 position-relative px-0">
@@ -143,7 +185,7 @@
     </div>
   </div>
 </section>
-<section class="btn-section container-fluid bg-dark" id="sectionThree" data-section="red">
+<section class="btn-section container-fluid bg-dark">
   <div class="row justify-content-center">
     <div class="pt-7 col-11 col-lg-4 position-relative px-0">
       <h2 class="text-white fs-3 lh-xl mb-0 pb-3 text-center">你想要學習的程式，都在這裡</h2>
@@ -166,7 +208,7 @@
     </div>
   </div>
 </section>
-<section class="program-card bg-black" id="sectionFour" data-section="green">
+<section class="program-card bg-black">
   <div class="container-xxl">
     <div class="row justify-content-center">
       <div class="pt-7 col-2 position-relative px-0">
@@ -242,17 +284,17 @@
     <button class="btn gradient-custom text-white border-0">所有課程列表</button>
   </div>
 </section>
-<section class="benefit container-fluid px-0" id="sectionFive" data-section="purple">
+<section class="benefit container-fluid px-0">
   <div class="row flex-sm-wrap flex-md-wrap flex-lg-nowrap mx-0">
     <div class="col-12 col-md-6 col-lg-3 bgi-1 d-flex flex-column align-items-center pt-4 position-relative card-body">
       <div class="card-padding context-z-index">
         <span class="material-icons text-white">forum</span>
         <div class="position-relative">
-          <h3 class="text-white position-relative pb-3">對症下藥，專案製作</h3>
+          <p class="text-white position-relative fs-4 pb-3">對症下藥，專案製作</p>
           <div class="hue-line-5 bg-white"></div>
         </div>
-        <h5 class="text-white mt-6 fs-sp mb-0">除了可以瘋狂提問之外</h5>
-        <h5 class="text-white fs-sp">還有機會一起完成專案</h5>
+        <p class="text-white mt-6 fs-sp mb-0">除了可以瘋狂提問之外</p>
+        <p class="text-white fs-sp">還有機會一起完成專案</p>
       </div>
       <div class="hue-line-6"></div>
     </div>
@@ -260,11 +302,11 @@
       <div class="card-padding context-z-index">
         <span class="material-icons text-primary">lightbulb</span>
         <div class="position-relative">
-          <h3 class="text-white position-relative pb-3">激發你的學習潛力</h3>
+          <p class="text-white position-relative fs-4 pb-3">激發你的學習潛力</p>
           <div class="hue-line-5 bg-primary"></div>
         </div>
-        <h5 class="text-white mt-6 fs-sp mb-0">進度制課程安排&個人化學習建議</h5>
-        <h5 class="text-white fs-sp">有效管理你的學習動力</h5>
+        <p class="text-white mt-6 fs-sp mb-0">進度制課程安排&個人化學習建議</p>
+        <p class="text-white fs-sp">有效管理你的學習動力</p>
       </div>
       <div class="hue-line-6"></div>
     </div>
@@ -272,11 +314,11 @@
       <div class="card-padding context-z-index">
         <span class="material-icons text-white">thumb_up_alt</span>
         <div class="position-relative">
-          <h3 class="text-white position-relative pb-3">學習效率</h3>
+          <p class="text-white position-relative fs-4 pb-3">學習效率</p>
           <div class="hue-line-5 bg-white"></div>
         </div>
-        <h5 class="text-white mt-6 fs-sp mb-0">針對學員狀況調整內容與步調</h5>
-        <h5 class="text-white fs-sp">學習精準最有效</h5>
+        <p class="text-white mt-6 fs-sp mb-0">針對學員狀況調整內容與步調</p>
+        <p class="text-white fs-sp">學習精準最有效</p>
       </div>
       <div class="hue-line-6"></div>
     </div>
@@ -284,17 +326,17 @@
       <div class="card-padding context-z-index">
         <span class="material-icons text-white">supervisor_account</span>
         <div class="position-relative">
-          <h3 class="text-white position-relative pb-3">一對一指導</h3>
+          <p class="text-white position-relative fs-4 pb-3">一對一指導</p>
           <div class="hue-line-5 bg-white"></div>
         </div>
-        <h5 class="text-white mt-6 fs-sp mb-0">針對目的進行客製化課程安排</h5>
-        <h5 class="text-white fs-sp">快速的學以致用</h5>
+        <p class="text-white mt-6 fs-sp mb-0">針對目的進行客製化課程安排</p>
+        <p class="text-white fs-sp">快速的學以致用</p>
       </div>
       <div class="hue-line-6"></div>
     </div>
   </div>
 </section>
-<section class="articles pb-5" id="sectionSix" data-section="yellow">
+<section class="articles pb-5">
   <div class="container-xxl">
     <div class="row justify-content-center">
       <div class="pt-7 col-11 col-lg-2 position-relative">
@@ -344,7 +386,7 @@
     </ul>
   </div>
 </section>
-<section class="feedback" id="sectionSeven" data-section="pink">
+<div class="feedback">
   <div class="container">
     <h2 class="text-center text-white" style="margin-bottom: 64px;">專屬你的學習課程<br>超過 3000 位學員得到了程式超能力</h2>
     <div class="row justify-content-center">
@@ -399,8 +441,8 @@
       </div>
     </div>
   </div>
-</section>
-<section class="join-us bg-black py-7" id="sectionEight" data-section="orange">
+</div>
+<section class="join-us bg-black py-7">
   <div class="container-xxl">
     <div class="row justify-content-center">
       <div class="col-md-12 col-lg-9">
@@ -417,18 +459,17 @@
   </div>
 </section>
 
-  
-      <footer class="footer container-fluid bg-dark">
-        <div class="row flex-row justify-content-center">
-          <div class="col-12 col-lg-4 py-4">
-            <p class="text-white text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
-          </div>
+
+    <footer class="footer container-fluid bg-dark">
+      <div class="row flex-row justify-content-center">
+        <div class="col-12 col-lg-4 py-4">
+          <p class="text-white text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
         </div>
-      </footer>
-  
-      <script src="./assets/js/vendors.js"></script>
-      <script src="./assets/js/all.js"></script>
-    </body>
-  </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
 
 </html>

@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.95">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Courses</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
@@ -12,39 +12,81 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./assets/js/swiper.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
   </head>
 
   <body>
-    <div class="scroller">
-      <nav class="fixed-top navbar-layout" id="barWatcher">
-        <div class="rgb-border">
-          <div class="container-fluid">
-            <div class="bg-dark row justify-content-around justify-content-lg-center align-items-center ">
-              <img class="col-4 col-sm-4 col-md-4 col-lg-2 py-3 px-2 px-md-4 px-lg-5" src="./assets/images/logo.svg" alt="logo">
-              <div class="col-8 col-sm-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center px-2 px-md-4 px-lg-5">
-                  <input type="checkbox" id="toggle">
-                  <label for="toggle">
-                      <span class="material-icons text-primary">menu</span>
-                  </label>
-                  <ul class="d-flex justify-content-center list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
-                    <li class="me-md-4 py-4 py-md-0"><a class="link-light text-decoration-none" href="#">首頁</a></li>
-                    <li class="me-md-4 pb-4 pb-md-0"><a class="link-light text-decoration-none" href="./course.html">課程介紹</a></li>
-                    <div class="d-flex pb-4 pb-md-0">
-                      <li><a href="#" class="link-light"><span class="material-icons mb-0">account_circle</span></a></li>
-                      <li><a href="#" class="link-light text-decoration-none">登入</a></li>
-                    </div>
-                  </ul>
-              </div>
+    <nav class="fixed-top navbar-layout" id="barWatcher">
+      <div class="rgb-border">
+        <div class="container-fluid">
+          <div class="bg-dark row justify-content-around justify-content-lg-center align-items-center ">
+            <img class="col-4 col-sm-4 col-md-4 col-lg-2 py-3 px-2 px-md-4 px-lg-5" src="./assets/images/logo.svg" alt="logo">
+            <div class="col-8 col-sm-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center px-2 px-md-4 px-lg-5">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">
+                    <span class="material-icons text-primary">menu</span>
+                </label>
+                <ul class="d-flex justify-content-center list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
+                  <li class="me-md-4 py-4 py-md-0"><a class="link-light text-decoration-none" href="#">首頁</a></li>
+                  <li class="me-md-4 pb-4 pb-md-0"><a class="link-light text-decoration-none" href="./course.html">課程介紹</a></li>
+                  <div class="d-flex pb-4 pb-md-0">
+                    <li><a href="#" class="link-light"><span class="material-icons mb-0">account_circle</span></a></li>
+                    <li><a href="#" class="link-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#openMe">登入</a></li>
+                  </div>
+                </ul>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="container-fluid">
-        <div id="navbar-filler">
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div id="navbar-filler">
+      </div>
+    </div>
+    <div class="modal fade" id="openMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header d-flex flex-row border-0">
+            <h6 class="modal-title text-white" id="exampleModalLabel">登入</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pb-6">
+            <form>
+              <div class="form-group mb-4">
+                <label for="exampleInputEmail1 text-white">信箱</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入信箱">
+              </div>
+              <div class="form-group mb-4">
+                <label for="exampleInputPassword1">密碼</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入密碼">
+              </div>
+              <button type="submit" class="btn gradient-custom col-12">登入</button>
+              <div class="d-flex flex-row align-items-center justify-content-between mt-6">
+                <div class="decoration-line align-self-center"></div>
+                <p class="text-center text-white mb-0">其他登入方式</p>
+                <div class="decoration-line align-self-center"></div>
+              </div>
+              <a href="" class="custom-btn col-12 mt-4 text-white rounded justify-content-center justify-content-lg-start">
+                <div class="col-8 d-flex justify-content-around ms-3">
+                  <img src="./assets/images/icon_google.svg" class="">
+                  <p class="align-self-center mb-0">Google 登入</p>
+                </div>
+              </a>
+              <a href="" class="custom-btn col-12 mt-4 text-white rounded justify-content-center justify-content-lg-start">
+                <div class="col-8 d-flex justify-content-around ms-3">
+                  <img src="./assets/images/icon_fb.svg" class="">
+                  <p class="align-self-center mb-0">Facebook 登入</p>
+                </div>
+              </a>
+            </form>
+          </div>
         </div>
       </div>
-  
-      
+    </div>
+
+    
 <section class="btn-section-2 container-fluid pt-7">
     <div class="container-fluid container-xxl">
       <div class="row flex-nowrap overflow-auto justify-content-center pt-7 pb-5">
@@ -77,8 +119,8 @@
                             <p class="text-primary mb-lg-3 fs-2">NT$1600</p>
                         </div>
                         <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center">
-                            <button type="button" class="col-6 col-md-6 col-lg-10 me-3 mb-0 mb-lg-2 btn btn-lg btn-dark btn-outline-light fs-8"><a class="text-decoration-none link-white" href="./detail.html">課程介紹</a></button>
-                            <button type="button" class="gradient-custom text-white col-6 col-md-6 col-lg-10 me-0 me-md-3 me-lg-3 btn btn-lg btn-dark btn-outline-light fs-8">立即預約</button>
+                            <button type="button" class="col-6 col-md-6 col-lg-10 me-3 mb-0 mb-lg-2 btn btn-lg btn-dark btn-outline-light fs-8" onclick="location.href = './detail.html'">課程介紹</button>
+                            <button type="button" class="gradient-custom text-white col-6 col-md-6 col-lg-10 me-0 me-md-3 me-lg-3 btn btn-lg btn-dark btn-outline-light fs-8" onclick="location.href = './order.html'">立即預約</button>
                         </div>
                     </div>
                 </div>
@@ -150,18 +192,17 @@
     </div>
   </section>
 
-  
-      <footer class="footer container-fluid bg-dark">
-        <div class="row flex-row justify-content-center">
-          <div class="col-12 col-lg-4 py-4">
-            <p class="text-white text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
-          </div>
+
+    <footer class="footer container-fluid bg-dark">
+      <div class="row flex-row justify-content-center">
+        <div class="col-12 col-lg-4 py-4">
+          <p class="text-white text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
         </div>
-      </footer>
-  
-      <script src="./assets/js/vendors.js"></script>
-      <script src="./assets/js/all.js"></script>
-    </body>
-  </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
 
 </html>

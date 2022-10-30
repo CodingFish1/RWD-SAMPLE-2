@@ -3,53 +3,95 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.95">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Courses</title>
+    <title>Details</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./assets/js/swiper.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
   </head>
 
   <body>
-    <div class="scroller">
-      <nav class="fixed-top navbar-layout" id="barWatcher">
-        <div class="rgb-border">
-          <div class="container-fluid">
-            <div class="bg-dark row justify-content-around justify-content-lg-center align-items-center ">
-              <img class="col-4 col-sm-4 col-md-4 col-lg-2 py-3 px-2 px-md-4 px-lg-5" src="./assets/images/logo.svg" alt="logo">
-              <div class="col-8 col-sm-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center px-2 px-md-4 px-lg-5">
-                  <input type="checkbox" id="toggle">
-                  <label for="toggle">
-                      <span class="material-icons text-primary">menu</span>
-                  </label>
-                  <ul class="d-flex justify-content-center list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
-                    <li class="me-md-4 py-4 py-md-0"><a class="link-light text-decoration-none" href="#">首頁</a></li>
-                    <li class="me-md-4 pb-4 pb-md-0"><a class="link-light text-decoration-none" href="./course.html">課程介紹</a></li>
-                    <div class="d-flex pb-4 pb-md-0">
-                      <li><a href="#" class="link-light"><span class="material-icons mb-0">account_circle</span></a></li>
-                      <li><a href="#" class="link-light text-decoration-none">登入</a></li>
-                    </div>
-                  </ul>
-              </div>
+    <nav class="fixed-top navbar-layout" id="barWatcher">
+      <div class="rgb-border">
+        <div class="container-fluid">
+          <div class="bg-dark row justify-content-around justify-content-lg-center align-items-center ">
+            <img class="col-4 col-sm-4 col-md-4 col-lg-2 py-3 px-2 px-md-4 px-lg-5" src="./assets/images/logo.svg" alt="logo">
+            <div class="col-8 col-sm-6 col-md-8 col-lg-10 burger-menu d-flex justify-content-end align-items-center px-2 px-md-4 px-lg-5">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">
+                    <span class="material-icons text-primary">menu</span>
+                </label>
+                <ul class="d-flex justify-content-center list-unstyled text-text mb-0 fs-7 lh-md menu-content-layout">
+                  <li class="me-md-4 py-4 py-md-0"><a class="link-light text-decoration-none" href="#">首頁</a></li>
+                  <li class="me-md-4 pb-4 pb-md-0"><a class="link-light text-decoration-none" href="./course.html">課程介紹</a></li>
+                  <div class="d-flex pb-4 pb-md-0">
+                    <li><a href="#" class="link-light"><span class="material-icons mb-0">account_circle</span></a></li>
+                    <li><a href="#" class="link-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#openMe">登入</a></li>
+                  </div>
+                </ul>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="container-fluid">
-        <div id="navbar-filler">
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div id="navbar-filler">
+      </div>
+    </div>
+    <div class="modal fade" id="openMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header d-flex flex-row border-0">
+            <h6 class="modal-title text-white" id="exampleModalLabel">登入</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pb-6">
+            <form>
+              <div class="form-group mb-4">
+                <label for="exampleInputEmail1 text-white">信箱</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入信箱">
+              </div>
+              <div class="form-group mb-4">
+                <label for="exampleInputPassword1">密碼</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入密碼">
+              </div>
+              <button type="submit" class="btn gradient-custom col-12">登入</button>
+              <div class="d-flex flex-row align-items-center justify-content-between mt-6">
+                <div class="decoration-line align-self-center"></div>
+                <p class="text-center text-white mb-0">其他登入方式</p>
+                <div class="decoration-line align-self-center"></div>
+              </div>
+              <a href="" class="custom-btn col-12 mt-4 text-white rounded justify-content-center justify-content-lg-start">
+                <div class="col-8 d-flex justify-content-around ms-3">
+                  <img src="./assets/images/icon_google.svg" class="">
+                  <p class="align-self-center mb-0">Google 登入</p>
+                </div>
+              </a>
+              <a href="" class="custom-btn col-12 mt-4 text-white rounded justify-content-center justify-content-lg-start">
+                <div class="col-8 d-flex justify-content-around ms-3">
+                  <img src="./assets/images/icon_fb.svg" class="">
+                  <p class="align-self-center mb-0">Facebook 登入</p>
+                </div>
+              </a>
+            </form>
+          </div>
         </div>
       </div>
-  
-      
+    </div>
+
+    
 <section class="bg-bdark py-7 py-lg-9">
     <div class="container-xxl">
         <div class="row flex-row justify-content-center mx-0">
             <div class="col-lg-7">
-                <div class="radius-card bg-dark d-flex flex-column flex-lg-row py-5 pe-lg-5 mb-6">
+                <div class="radius-card bg-dark d-flex flex-column flex-lg-row py-5 pe-lg-5 mb-2">
                     <div class="col-lg-3 cc-icon d-flex flex-column align-items-center">
                         <img src="./assets/images/teacher01.jpg" alt="">
                         <p class="text-white fs-8 mb-0 mt-1">Belinda</p>
@@ -155,7 +197,7 @@
     <div class="container-xxl pb-11">
         <h2 class="col-lg-12 text-center fs-3 text-white pt-11 mb-0">其他人也看了這些課程</h2>
         <div class="row gx-4 mt-6 mx-0"> <!----正常應爲gx-4---->
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0 h-100">
               <div class="pt-4 border radius-card d-flex flex-column align-items-center card-4 bg-dark">
                 <img src="./assets/images/teacher01.jpg" alt="">
                 <p class="mt-2 mb-4 fs-4 text-white">Belinda</p>
@@ -170,7 +212,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0 h-100">
               <div class="pt-4 border radius-card d-flex flex-column align-items-center card-4 bg-dark h-100">
                 <img src="./assets/images/teacher02.jpg" alt="">
                 <p class="mt-2 mb-4 fs-4 text-white">Guava</p>
@@ -185,7 +227,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0 h-100">
               <div class="pt-4 border radius-card d-flex flex-column align-items-center card-4 bg-dark h-100">
                 <img src="./assets/images/teacher03.jpg" alt="">
                 <p class="mt-2 mb-4 fs-4 text-white">Joe</p>
@@ -200,14 +242,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-lg-0">
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-lg-0 h-100">
               <div class="pt-4 border radius-card d-flex flex-column align-items-center card-4 bg-dark h-100">
                 <img src="./assets/images/teacher04.jpg" alt="">
                 <p class="mt-2 mb-4 fs-4 text-white">Lina</p>
                 <div class="border-bottom ps-4 pe-4">
                   <p class="fs-6 text-white lh-sm mb-2">Linux 零基礎七天入門｜入門到實務</p>
                   <p class="fs-6 text-primary lh-sm mb-2">作業系統與伺服器</p>
-                  <p class="fs-8 text-white lh-sm mb-5">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
+                  <p class="fs-8 text-white lh-sm mb-6">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
                 </div>
                 <div class="mt-3 pb-3 d-flex flex-row align-items-center">
                   <p class="mb-0 text-white me-2 fs-8">50分鐘</p>
@@ -218,18 +260,17 @@
         </div>
     </div>
 </section>
-  
-      <footer class="footer container-fluid bg-dark">
-        <div class="row flex-row justify-content-center">
-          <div class="col-12 col-lg-4 py-4">
-            <p class="text-white text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
-          </div>
+
+    <footer class="footer container-fluid bg-dark">
+      <div class="row flex-row justify-content-center">
+        <div class="col-12 col-lg-4 py-4">
+          <p class="text-white text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
         </div>
-      </footer>
-  
-      <script src="./assets/js/vendors.js"></script>
-      <script src="./assets/js/all.js"></script>
-    </body>
-  </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
 
 </html>
