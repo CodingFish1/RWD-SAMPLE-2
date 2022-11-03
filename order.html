@@ -107,10 +107,10 @@
         </div>
     </div>
 </section>
-<section class="order-detail bg-black pt-7">
-    <div class="container-xxl d-flex flex-row justify-content-center align-items-center">
-        <div class="row d-flex flex-row">
-            <div class="col-lg-4 bg-dark pt-7 pb-7 align-self-center special-card-layout">
+<section class="order-detail bg-black pt-4 px-3">
+    <div class="container-xxl d-flex flex-row justify-content-center">
+        <div class="row flex-column flex-xl-row">
+            <div class="bg-dark pt-7 pb-7 align-self-center card-layout mb-7 mb-xl-0 position-relative">
                 <div class="text-center">
                     <img class="" src="./assets/images/teacher01.jpg" alt="">
                 </div>
@@ -118,53 +118,58 @@
                 <h6 class="text-center text-primary">前端語言</h6>
                 <h6 class="text-center text-white">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</h6>
             </div>
-            <div class="col-8 bg-bdark special-layout">
+            <div class="bg-bdark payment-layout mb-7">
                 <h4 class="text-center text-white pt-7">課程報名</h4>
-                <h6 class="text-white">選擇付款方式</h6>
-                <class class="btn-group mb-4">
-                    <a href="" class="py-2 me-3 custom-btn rounded">
-                        <p class="text-primary px-4">信用卡付款</p>
-                    </a>
-                    <a href="" class="py-2 me-3 custom-btn rounded">
-                        <p class="px-4 text-white">超商繳款</p>
-                    </a>
-                    <a href="" class="py-2 me-3 custom-btn rounded">
-                        <p class="px-4 text-white">ATM轉帳</p>
-                    </a>
-                    <a href="" class="py-2 custom-btn rounded">
-                        <p class="text-white px-4">12期分期付款</p>
-                    </a>
+                <h6 class="text-white text-center text-sm-start">選擇付款方式</h6>
+                <class class="btn-group mb-4 d-flex justify-content-center justify-content-sm-start">
+                    <div class="d-flex flex-column flex-sm-row">
+                        <a href="" class="short-btn py-2 me-1 me-sm-3 mb-2 mb-sm-0 custom-btn rounded text-center">
+                            <p class="text-primary px-3 px-sm-3">信用卡付款</p>
+                        </a>
+                        <a href="" class="short-btn py-2 me-1 me-sm-3 custom-btn rounded text-center">
+                            <p class="text-white px-2 px-sm-3">12期分期付款</p>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row">
+                        <a href="" class="short-btn py-2 me-sm-3 mb-2 mb-sm-0 custom-btn rounded text-center">
+                            <p class="text-white px-3 px-sm-6 ">ATM轉帳</p>
+                        </a>
+                        <a href="" class="short-btn py-2 custom-btn rounded text-center">
+                            <p class="text-white px-3 px-sm-6">超商繳款</p>
+                        </a>
+                    </div>
                 </class>
+                <h6 class="fs-18 text-center text-xl-start text-white">訂單資訊</h6>
                 <form>
-                    <div class="d-flex flex-row">
-                        <div class="form-group col-5 mb-4 mr-set">
+                    <div class="row">
+                        <div class="form-group col-lg-6 mb-4">
                             <label for="exampleInputEmail1 text-white">姓名</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入姓名">
                         </div>
-                        <div class="form-group col-5 mb-4">
+                        <div class="form-group col-lg-6 mb-4">
                             <label for="exampleInputPassword1">電話</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入電話號碼">
                         </div>
-                    </div>
-                    <div>
-                        <div class="form-group col-11 mb-4">
+                        <div class="form-group col-12 mb-4">
                             <label for="exampleInputEmail1 text-white">E-Mail</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入信箱">
                         </div>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <div class="form-group col-5 mb-4 mr-set">
+                        <div class="form-group col-lg-6 mb-4">
                             <label for="exampleInputEmail1 text-white">课程</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入姓名">
                         </div>
-                        <div class="form-group col-5 mb-4">
+                        <div class="form-group col-lg-6 mb-4">
                             <label for="exampleInputPassword1">想預約的日期</label>
-                            <input type="text" name="inputDate" class="form-control" id="" placeholder="請選擇日期">
+                            <input type="text" name="inputDate" class="form-control text-white" id="" placeholder="請選擇日期">
                         </div>
-                    </div>
-                    <div class="form-group col-11 mb-4">
-                        <label for="exampleInputEmail1 text-white">上課地點</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入上課地點">
+                        <div class="form-group col-lg-12 mb-4">
+                            <label for="exampleInputEmail1 text-white">上課地點</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入上課地點">
+                        </div>
+                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center pb-4">
+                            <h6 class="text-white">NT$1600</h6>
+                            <button type="submit" class="btn gradient-custom col-12 col-lg-3">登入</button>
+                        </div>
                     </div>
                 </form>
                 
