@@ -74,10 +74,20 @@
     font-size: 50px;
   }
 
-  .card-1 :hover{
-    border: 1px solid #62DB54;
+  // .card-1 :hover{
+  //   border: 1px solid #62DB54;
+  //   border-radius: 12pt 12pt 12pt 12pt;
+  //   background-color: #202020;
+  // }
+
+  .card-1{
+    border:1px solid #2D2D2D;
     border-radius: 12pt 12pt 12pt 12pt;
-    background-color: #202020;
+
+    &:hover{
+      border:1px solid #62DB54;
+      background-color: #202020; 
+    }
   }
 
   .hue-line{

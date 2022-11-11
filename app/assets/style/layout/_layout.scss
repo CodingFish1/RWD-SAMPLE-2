@@ -1,4 +1,13 @@
 .navbar-layout{
+    .brand-logo a{
+        background-image:url(../assets/images/logo.svg);
+		width: 122px; 
+		height:29px;
+		display:block; 
+		text-indent:101%;
+		white-space:nowrap;
+		overflow:hidden; 
+    }
 
     .burger-menu{
         label{
@@ -67,5 +76,35 @@
         #toggle:checked ~ .menu-content-layout {
             border:1px solid white;
         }
+    }
+}
+
+label{
+    color:white;
+}
+
+.decoration-line{
+    width: 35%;
+    display: inline;
+    border-bottom: 1px solid white;
+
+    @media (max-width: 575.98px) { width: 25%; }
+}
+
+.custom-btn{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    border:1px solid white;
+    text-decoration: none;
+
+    img{
+        width: 24px;
+        height: 24px;
+        margin:8px 0px 8px 0px;
+    }
+    
+    p{
+        display: inline;
     }
 }

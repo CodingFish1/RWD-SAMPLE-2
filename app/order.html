@@ -1,0 +1,99 @@
+---
+title: Order
+layout: ./app/layout.ejs
+engine: ejs
+current: order
+---
+
+<section class="status-bar">
+    <div class="container-fluid bg-bdark">
+        <div class="row justify-content-center">
+            <div class="progress-bar"></div>
+        </div>
+        <div class="row justify-content-center pt-4">
+            <div class="d-flex step">
+                <div class="col-4 step-one actived">
+                    <p class="text-start">課程報名</p>
+                </div>
+                <div class="col-4 step-two">
+                    <p class="text-center">線上支付</p>
+                </div>
+                <div class="col-4 step-three">
+                    <p class="text-end">付款成功</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="order-detail bg-black pt-4 px-3">
+    <div class="container-xxl d-flex flex-row justify-content-center">
+        <div class="row flex-column flex-xl-row">
+            <div class="bg-dark pt-7 pb-7 align-self-center card-layout mb-7 mb-xl-0 position-relative">
+                <div class="text-center">
+                    <img class="" src="./assets/images/teacher01.jpg" alt="">
+                </div>
+                <h6 class="text-white text-center pt-4">2022 Python 全攻略｜從入門到實務</h6>
+                <h6 class="text-center text-primary">前端語言</h6>
+                <h6 class="text-center text-white">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</h6>
+            </div>
+            <div class="bg-bdark payment-layout mb-7">
+                <h4 class="text-center text-white pt-7">課程報名</h4>
+                <h6 class="text-white text-center text-sm-start">選擇付款方式</h6>
+                <class class="btn-group mb-4 d-flex justify-content-center justify-content-sm-start">
+                    <div class="d-flex flex-column flex-sm-row short-btn">
+                        <a href="" class="py-2 me-1 me-sm-3 mb-2 mb-sm-0 custom-btn rounded text-center">
+                            <p class="text-primary px-0 px-sm-3">信用卡付款</p>
+                        </a>
+                        <a href="" class="py-2 me-1 me-sm-3 custom-btn rounded text-center">
+                            <p class="text-white px-0 px-sm-3">12期分期付款</p>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row short-btn">
+                        <a href="" class="py-2 me-sm-3 mb-2 mb-sm-0 custom-btn rounded text-center">
+                            <p class="text-white px-3 px-sm-6 ">ATM轉帳</p>
+                        </a>
+                        <a href="" class="py-2 custom-btn rounded text-center">
+                            <p class="text-white px-3 px-sm-6">超商繳款</p>
+                        </a>
+                    </div>
+                </class>
+                <h6 class="fs-18 text-center text-xl-start text-white">訂單資訊</h6>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-lg-6 mb-4">
+                            <label for="name-field text-white">姓名</label>
+                            <input type="email" class="form-control" id="name-field" aria-describedby="emailHelp" placeholder="請輸入姓名">
+                        </div>
+                        <div class="form-group col-lg-6 mb-4">
+                            <label for="tel-field">電話</label>
+                            <input type="password" class="form-control" id="tel-field" placeholder="請輸入電話號碼">
+                        </div>
+                        <div class="form-group col-12 mb-4">
+                            <label for="email-field text-white">E-Mail</label>
+                            <input type="email" class="form-control" id="email-field" aria-describedby="emailHelp" placeholder="請輸入信箱">
+                        </div>
+                        <div class="form-group col-lg-6 mb-4">
+                            <label for="course-field text-white">课程</label>
+                            <input type="email" class="form-control" id="course-field" aria-describedby="emailHelp" placeholder="請輸入姓名">
+                        </div>
+                        <div class="form-group col-lg-6 mb-4">
+                            <label for="date-field">想預約的日期</label>
+                            <input type="text" name="inputDate" class="form-control text-white" id="date-field" placeholder="請選擇日期">
+                        </div>
+                        <div class="form-group col-lg-12 mb-4">
+                            <label for="location-field text-white">上課地點</label>
+                            <input type="email" class="form-control" id="location-field" aria-describedby="emailHelp" placeholder="請輸入上課地點">
+                        </div>
+                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center pb-4">
+                            <h6 class="text-white">NT$1600</h6>
+                            <button id="btn-design5" class="btn-design5"></button> 
+                            <label for="btn-design5" class="label-5 gradient-custom rounded-2 px-sm-7 text-center">前往結賬</label>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+
+    </div>
+</section>
