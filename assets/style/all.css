@@ -14586,6 +14586,16 @@ img {
   font-size: 80px;
 }
 
+.navbar-layout .brand-logo a {
+  background-image: url(../assets/images/logo.svg);
+  width: 122px;
+  height: 29px;
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .navbar-layout .burger-menu label {
   display: none;
 }
