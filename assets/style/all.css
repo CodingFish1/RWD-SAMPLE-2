@@ -14716,12 +14716,17 @@ label {
 }
 
 .progress-bar {
+  width: 60%;
   top: 36px;
   left: 0px;
   position: relative;
   height: 2px;
   background-color: white;
   z-index: 0;
+}
+
+.step {
+  width: 66%;
 }
 
 .step p {
@@ -14731,7 +14736,7 @@ label {
 .step-one::before {
   display: inline-block;
   content: '1';
-  left: 50%;
+  left: 10%;
   color: white;
   position: relative;
   text-align: center;
@@ -14765,7 +14770,7 @@ label {
 .step-three::before {
   display: inline-block;
   content: '3';
-  left: 50%;
+  left: 90%;
   color: white;
   position: relative;
   text-align: center;
@@ -14796,7 +14801,7 @@ label {
 .order-detail .card-layout::after {
   content: '';
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 100%;
   border-style: solid;
   border-width: 12px 12px 0 12px;
