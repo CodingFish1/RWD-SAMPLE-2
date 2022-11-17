@@ -6,13 +6,7 @@ var resizeObserver = new ResizeObserver(function (entries) {
     heightChanger.style.height = entry.contentRect.height + 3 + 'px';
   });
 });
-resizeObserver.observe(document.querySelector('#barWatcher')); // const elem = document.querySelector('input[name="inputDate"]');
-// const datepicker = new Datepicker(elem, {
-//   // ...options
-//   language: 'zh-TW',
-//   buttonClass: 'btn',
-// }); 
-
+resizeObserver.observe(document.querySelector('#barWatcher'));
 var swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination'
@@ -26,5 +20,4 @@ var swiper = new Swiper('.swiper', {
     draggable: true
   }
 });
-"use strict";
 //# sourceMappingURL=all.js.map
