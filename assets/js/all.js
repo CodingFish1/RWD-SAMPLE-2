@@ -7,12 +7,6 @@ var resizeObserver = new ResizeObserver(function (entries) {
   });
 });
 resizeObserver.observe(document.querySelector('#barWatcher'));
-var elem = document.querySelector('input[name="inputDate"]');
-var datepicker = new Datepicker(elem, {
-  // ...options
-  language: 'zh-TW',
-  buttonClass: 'btn'
-});
 var swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination'
@@ -26,4 +20,11 @@ var swiper = new Swiper('.swiper', {
     draggable: true
   }
 });
+var elem = document.querySelector('input[name="inputDate"]');
+var datepicker = new Datepicker(elem, {
+  // ...options
+  language: 'zh-TW',
+  buttonClass: 'btn'
+});
+"use strict";
 //# sourceMappingURL=all.js.map
