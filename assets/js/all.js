@@ -13,8 +13,6 @@ var datepicker = new Datepicker(elem, {
   language: 'zh-TW',
   buttonClass: 'btn'
 });
-"use strict";
-
 var swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination'
