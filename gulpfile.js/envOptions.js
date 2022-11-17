@@ -11,7 +11,6 @@ let envOptions = {
     src: [
       `${srcPath}/**/*`,
       `!${srcPath}/assets/js/**/*.js`,
-      `!${srcPath}/assets/style/*`,
       `!${srcPath}/assets/style/**/*.scss`,
       `!${srcPath}/assets/style/**/*.sass`,
       `!${srcPath}/**/*.ejs`,
@@ -32,10 +31,7 @@ let envOptions = {
     src: [
       `${srcPath}/assets/style/**/*.scss`,
       `${srcPath}/assets/style/**/*.sass`,
-    ],
-    outputStyle: 'expanded',
-    includePaths: [
-      `${nodePath}/bootstrap/scss`,
+      `${nodePath}/swiper/swiper-bundle.min.css`,
     ],
     path: `${distPath}/assets/style`,
   },
@@ -43,14 +39,14 @@ let envOptions = {
     src: [
       `${srcPath}/assets/js/**/*.js`
     ],
-    /**** */
     concat: 'all.js',
     path: `${distPath}/assets/js`,
   },
   vendors: {
     src: [
-      `${nodePath}/jquery/dist/jquery.slim.min.js`,
+      `${nodePath}/jquery/dist/**/jquery.min.js`,
       `${nodePath}/bootstrap/dist/js/bootstrap.bundle.min.js`, // 已包含 popper.js
+      `${nodePath}/swiper/swiper-bundle.min.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,
@@ -63,10 +59,7 @@ let envOptions = {
   clean: {
     src: distPath,
   },
-  browserSetting: {
-    dir: distPath,
-    port: 8080,
-  },
+  browserDir: distPath,
   deploySrc: `${distPath}/**/*`,
 };
 
