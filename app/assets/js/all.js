@@ -6,13 +6,6 @@ const resizeObserver = new ResizeObserver((entries) => {
   })
   resizeObserver.observe(document.querySelector('#barWatcher'))
 
-  // const elem = document.querySelector('input[name="inputDate"]');
-  // const datepicker = new Datepicker(elem, {
-  //   // ...options
-  //   language: 'zh-TW',
-  //   buttonClass: 'btn',
-  // }); 
-
   const swiper = new Swiper('.swiper', {
   
     pagination: {

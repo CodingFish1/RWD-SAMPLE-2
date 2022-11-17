@@ -31,7 +31,6 @@ let envOptions = {
     src: [
       `${srcPath}/assets/style/**/*.scss`,
       `${srcPath}/assets/style/**/*.sass`,
-      `${nodePath}/swiper/swiper-bundle.min.css`,
     ],
     path: `${distPath}/assets/style`,
   },
@@ -47,6 +46,8 @@ let envOptions = {
       `${nodePath}/jquery/dist/**/jquery.min.js`,
       `${nodePath}/bootstrap/dist/js/bootstrap.bundle.min.js`, // 已包含 popper.js
       `${nodePath}/swiper/swiper-bundle.min.js`,
+      `${nodePath}/vanillajs-datepicker/dist/js/datepicker.min.js`,
+      `${nodePath}/vanillajs-datepicker/dist/js/datepicker-full.min.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,

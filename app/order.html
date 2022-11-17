@@ -4,6 +4,10 @@ layout: ./app/layout.ejs
 engine: ejs
 current: order
 ---
+<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+
 
 <section class="status-bar">
     <div class="container-fluid bg-bdark">
@@ -94,6 +98,13 @@ current: order
                 
             </div>
         </div>
-
     </div>
 </section>
+<script>
+    const elem = document.querySelector('input[name="inputDate"]');
+    const datepicker = new Datepicker(elem, {
+        // ...options
+        language: 'zh-TW',
+        buttonClass: 'btn',
+      }); 
+</script>
